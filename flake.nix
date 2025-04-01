@@ -1,5 +1,5 @@
 {
-    description = "testbed";
+    description = "A fun an chaotic testbed enviroment";
 
     inputs = {
         nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -26,6 +26,10 @@
                     netcat
                     nmap
                     python314
+                    python313Packages.matplotlib
+                    python313Packages.numpy
+                    python313Packages.scipy
+                    python313Packages.sympy
                     renderdoc
                     rr
                     sage
@@ -34,16 +38,8 @@
                 ];
 
                 shellHook = ''
-                    # Switch to zsh
                     export SHELL=$(which zsh)
                     exec zsh
-
-                    # Setup Python virtual environment
-                    if [ ! -d ".venv/" ]; then
-                        python3 -m venv .venv/
-                    else
-                        source ".venv/bin/activate"
-                    fi
                 '';
             };
         };

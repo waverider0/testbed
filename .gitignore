@@ -1,6 +1,6 @@
-# ignore all
+# Ignore
 *
 
-# don't ignore
+# Don't ignore
 !.gitignore
 !flake.nix
