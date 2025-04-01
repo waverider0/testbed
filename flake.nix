@@ -1,5 +1,5 @@
 {
-    description = "A fun an chaotic testbed enviroment";
+    description = "A fun and chaotic testbed enviroment";
 
     inputs = {
         nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -19,12 +19,15 @@
                 [
                     binutils
                     clang
+                    cutter
                     gdb
                     gcc
                     gf
+                    ghidra
                     imhex
                     netcat
                     nmap
+                    odin
                     python313
                     python313Packages.matplotlib
                     python313Packages.numpy
@@ -35,6 +38,7 @@
                     sage
                     valgrind
                     wireshark
+                    zig
                 ];
 
                 shellHook = ''
