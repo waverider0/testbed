@@ -25,7 +25,7 @@
                     imhex
                     netcat
                     nmap
-                    python314
+                    python313
                     python313Packages.matplotlib
                     python313Packages.numpy
                     python313Packages.scipy
